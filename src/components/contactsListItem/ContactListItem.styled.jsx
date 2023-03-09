@@ -2,6 +2,8 @@ import styled from '@emotion/styled';
 
 export const ListItemStyled = styled.li`
   display: flex;
+  flex-direction: row-reverse;
+
   gap: 20px;
   align-items: center;
   margin-bottom: 10px;
@@ -12,6 +14,7 @@ export const ContactDesc = styled.p`
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   color: #fff;
+  transition: color 250ms ease-in-out;
 `;
 
 export const ButtonListItem = styled.button`
@@ -67,7 +70,7 @@ export const ButtonListItem = styled.button`
     width: 100%;
     transition: 800ms ease all;
   }
-  &:hover .contact-desk {
-    color: blue;
+  &:hover ~ p {
+    color: red;
   }
 `;

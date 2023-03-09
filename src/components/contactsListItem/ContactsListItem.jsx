@@ -9,8 +9,6 @@ export const ContactListItem = ({ id, name, number, onDelete }) => {
   return (
     <>
       <ListItemStyled>
-        <ContactDesc>{name}:</ContactDesc>
-        <ContactDesc>{number}</ContactDesc>
         <ButtonListItem
           type="button"
           onClick={() => {
@@ -19,6 +17,8 @@ export const ContactListItem = ({ id, name, number, onDelete }) => {
         >
           <span>Delete</span>
         </ButtonListItem>
+        <ContactDesc className="pidar">{number}</ContactDesc>
+        <ContactDesc>{name} :</ContactDesc>
       </ListItemStyled>
     </>
   );

@@ -4,7 +4,6 @@ import {
   ButtonListItem,
   ContactDesc,
 } from './ContactListItem.styled';
-import css from '../../index.css';
 
 export const ContactListItem = ({ id, name, number, onDelete }) => {
   return (
